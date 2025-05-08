@@ -1,0 +1,452 @@
+/* Dashboard Content Styles */
+.inner-left-content {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.popular-products-container {
+  flex: 1;
+}
+
+.health-packages-container {
+  flex: 1.6;
+}
+
+.dashboard {
+  padding: 24px;
+}
+
+.welcome {
+  margin-bottom: 24px;
+}
+
+.welcome-back {
+  color: #64748b;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 24px;
+}
+
+.content-left {
+  flex: 2;
+}
+
+.content-right {
+  flex: 1;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view-all {
+  color: #2563eb;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.top-doctors {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.doctor-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-card .doctor-info {
+  display: flex;
+  align-items: center;
+}
+
+.doctor-card .chevron {
+  margin-left: auto;
+  align-self: center;
+}
+
+.doctor-info {
+  display: flex;
+  align-items: center;
+}
+.doctor-details h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+
+.doctor-details p {
+  font-size: 12px;
+  color: var(--light-text);
+  margin-bottom: 4px;
+}
+.doctor-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.doctor-details h3 {
+  font-weight: 600;
+}
+
+.doctor-specialty {
+  color: #64748b;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.doctor-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.star {
+  color: #facc15;
+  margin-right: 4px;
+}
+
+.rating {
+  font-size: 14px;
+}
+
+.reviews {
+  color: #a0aec0;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+/* Product List Styles */
+.products-section {
+  flex: 1;
+}
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border: none;
+  width: 400px;
+  transition: background-color 0.2s;
+}
+.product-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.product-card:hover {
+  background-color: #f8fafc;
+}
+
+.product-info {
+  display: flex;
+  align-items: center;
+}
+
+.product-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e293b;
+}
+.product-details h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+.product-price {
+  display: flex;
+  align-items: center;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.current-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.original-price {
+  color: #a0aec0;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+/* Medications Styles */
+.medications {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+}
+
+.medication-item {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 16px;
+}
+
+.medication-item:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.medication-name {
+  font-weight: 600;
+}
+
+.medication-instructions {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 4px;
+}
+.medication-item h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.medication-item p {
+  font-size: 13px;
+  color: var(--light-text);
+  line-height: 1.4;
+}
+
+/* Health Packages Styles */
+.package-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 14px;
+  height: 400px;
+}
+
+.package-card {
+  background-color: white;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 12px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.package-card:hover {
+  background-color: #f8fafc;
+}
+
+.package-card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.package-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.package-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ebf4ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  object-fit: cover;
+}
+
+.package-details h3 {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.package-description {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.package-name {
+  color: #1e293b;
+}
+
+/* Consultation Styles */
+.consultation-section {
+  margin-top: -8px;
+}
+.consultation-title {
+  color: #1e293b;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+.consultation-date {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.consultation h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.consultation {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.consultation-doctor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.doctor-consultation-info {
+  display: flex;
+  align-items: center;
+}
+
+.consultation-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.date-info {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.date-icon {
+  margin-right: 8px;
+}
+
+.time-info {
+  display: flex;
+  align-items: center;
+}
+
+.consultation-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  background-color: white;
+  color: #64748b;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.reschedule-btn {
+  flex: 1;
+  padding: 8px 16px;
+  background-color: #18ac8c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.consultation .doctor-consultation-info h3,
+.consultation .date-info span,
+.consultation .time-info span {
+  color: #1e293b;
+}
+
+.inner-left-content {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.package-list,
+.product-list {
+  flex: 1;
+}

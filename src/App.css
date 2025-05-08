@@ -1,0 +1,137 @@
+/* App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", "Roboto", sans-serif;
+}
+
+:root {
+  --primary-color: #2563eb;
+  --secondary-color: #f1f5f9;
+  --text-color: #1e293b;
+  --light-text: #64748b;
+  --border-color: #e2e8f0;
+  --hover-color: #f8fafc;
+  --white: #ffffff;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --bg-color: #f9fafb;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+/* General Styles */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f5f7fb;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 15px 20px;
+  overflow-y: auto;
+}
+
+Content Section Styles .content-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-row {
+  display: flex;
+  gap: 20px;
+}
+
+.welcome-section {
+  margin-bottom: 5px;
+}
+
+.welcome-text {
+  font-size: 14px;
+  color: var(--light-text);
+  margin-bottom: 5px;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.section-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.view-all {
+  font-size: 14px;
+  color: var(--primary-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.view-all span {
+  font-size: 18px;
+  margin-left: 2px;
+}
+
+.options-icon {
+  cursor: pointer;
+}
+
+.options-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Styles for NotFound component */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  color: #64748b;
+}
+
+.not-found-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.not-found-container p {
+  font-size: 1rem;
+}
+
+/* Add styles for the horizontal divider */
+.divider {
+  border: none;
+  border-top: 1px solid silver;
+  margin: 0;
+  width: 100%;
+}
